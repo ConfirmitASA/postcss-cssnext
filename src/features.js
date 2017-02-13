@@ -6,8 +6,6 @@ export default {
    * order is important
    * ******************
    */
-   // https://npmjs.com/package/postcss-custom-properties
-  customProperties: (options) => require("postcss-custom-properties")(options),
 
   // https://npmjs.com/package/postcss-apply
   applyRule: (options) => require("postcss-apply")(options),
@@ -17,6 +15,15 @@ export default {
 
   // https://npmjs.com/package/postcss-nesting
   nesting: (options) => require("postcss-nesting")(options),
+  
+   // https://npmjs.com/package/postcss-custom-properties
+  extractCustomProperties: (options) => require("postcss-extract-custom-properties")(options),
+  
+   // https://npmjs.com/package/postcss-custom-properties
+  customProperties: (options) => require("postcss-custom-properties")(options),
+  
+   // https://npmjs.com/package/postcss-custom-properties
+  saveToJson: (options) => require("postcss-reportal-save-to-json")(options),
 
   // https://npmjs.com/package/postcss-custom-media
   customMedia: (options) => require("postcss-custom-media")(options),
