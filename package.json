@@ -114,7 +114,7 @@
   "scripts": {
     "prebabelify": "rimraf lib",
     "babelify": "babel src --out-dir lib",
-	"preinstall" "npm run prepublish",
+	"preinstall" "npm run babelify",
     "prepublish": "npm run babelify",
     "#lint": "even if there is a .eslintignore symlink, we use an explicit command because windows don't like unix symlink",
     "lint": "eslint --ignore-path .gitignore .",
